@@ -7,6 +7,26 @@
     <style>
         .food{
             border: 1px solid red;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:20px;
+
+        }
+        .food img{
+            width: 100%;
+           
+        }
+
+        /* simple media query */
+        @media  screen and (max-width:576px) {
+            .container{
+                grid-template-columns: repeat(1,1fr);
+            }
+            
         }
         
     </style>
@@ -15,7 +35,7 @@
     <div class="container">
         <div class="food">
             <img src="image/food.webp" alt="">
-            <h3>Food Item - 2</h3>
+            <h3>Food Item 01- </h3>
             <p>Price: $200</p>
             <p>Numquam nostrum et adipisci ut doloremque tempore sed ducimus. Ducimus labore quos cum suscipit, exercitationem fugiat dolorem obcaecati corporis et.</p>
         </div>
